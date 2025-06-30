@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "angular-setup-client-side-solution",
+    "id": "db327dd1-1b83-48cf-abec-3659487797f4",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.21.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Angular-setup description"
+      },
+      "longDescription": {
+        "default": "Angular-setup description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "angular-setup Feature",
+        "description": "The feature that activates elements of the angular-setup solution.",
+        "id": "d2a1eae0-ebe5-47b1-a142-d77aa7ea2351",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/angular-setup.sppkg"
+  }
+}

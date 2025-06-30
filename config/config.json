@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "angular-setup-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/angularSetup/AngularSetupWebPart.js",
+          "manifest": "./src/webparts/angularSetup/AngularSetupWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "AngularSetupWebPartStrings": "lib/webparts/angularSetup/loc/{locale}.js"
+  }
+}
