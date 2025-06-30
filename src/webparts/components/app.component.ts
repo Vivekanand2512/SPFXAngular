@@ -8,7 +8,10 @@ import { Component, Input, OnInit } from '@angular/core';
       <p> {{description}}</p>
       <button (click)="onClick()">Click me</button>
       <p *ngIf="clicked">Button was clicked!</p>
+          <app-child></app-child>
     </div>
+
+
   `,
   styles: [`
     .welcome {
@@ -30,7 +33,6 @@ export class AppComponent implements OnInit {
   @Input() title: string = '';
   @Input() description: string = '';
   clicked: boolean = false;
-
   ngOnInit() {
     console.log('Angular component initialized');
   }
