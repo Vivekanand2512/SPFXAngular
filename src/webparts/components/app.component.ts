@@ -1,17 +1,19 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { ChildComponent } from './child.component';
 
 @Component({
   selector: 'app-root',
+  standalone: true,
+  imports: [CommonModule, ChildComponent],
   template: `
     <div class="welcome">
       <h2>Welcome to {{title}}!</h2>
-      <p> {{description}}</p>
+      <p>{{description}}</p>
       <button (click)="onClick()">Click me</button>
       <p *ngIf="clicked">Button was clicked!</p>
-          <app-child></app-child>
+      <app-child *ngIf="clicked"></app-child>
     </div>
-
-
   `,
   styles: [`
     .welcome {
@@ -33,6 +35,7 @@ export class AppComponent implements OnInit {
   @Input() title: string = '';
   @Input() description: string = '';
   clicked: boolean = false;
+
   ngOnInit() {
     console.log('Angular component initialized');
   }
